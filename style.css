@@ -1,0 +1,370 @@
+ #maindiv{
+    margin: auto;
+    width: 25%;
+    margin-top: 12%;
+    padding-top: 7px;
+    text-align: center;
+    padding-bottom: 4%;
+box-shadow: 7px 7px 5px 0px #212121,
+-3px -3px 5px 1px #67736a;
+border-radius: 10px;
+}
+@media (max-width:1100px){
+  #maindiv{
+    width:37%;
+  }
+}
+@media (max-width:1000px){
+  #maindiv{
+    width: 40%;
+  }
+}
+@media (max-width:900px){
+#maindiv{
+  width: 40%;
+}
+}
+@media (max-width:800px){
+  #maindiv{
+    width: 47%;
+  }
+}
+@media (max-width:700px){
+  #maindiv{
+    width: 47%;
+  }
+}
+@media (max-width:600px){
+  #maindiv{
+    width: 53%;
+  }
+}
+@media (max-width:500px){
+  #maindiv{
+    width: 60%;
+  }
+}
+@media (max-width:400px){
+  #maindiv{
+    width: 70%;
+  }
+}
+@media (max-width:300px){
+  #maindiv{
+    width:80%;
+  }
+}
+.greet{
+    color: #64e89b;
+    text-shadow: 2px 2px 5px #80edaf;
+}
+body{
+    background-color: #34373b;
+}
+#name{
+    background-color: #34373b;
+box-shadow: 2px 2px 3px 0px gray,
+-3px -3px 5px 1px #212121;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: grey;
+width: 80%;
+}
+#go , #back{
+    background-color: #34373b;
+box-shadow: 4px 4px 4px 0px #212121,
+-1px -1px 3px 1px grey;
+border: none;
+border-radius: 5px;
+padding: 10px;
+color: grey;
+width: 80%;
+}
+input:focus{
+    outline: none;
+}
+#label1{
+    position: relative;
+    right: 45%;
+    transition: 2s all;
+    cursor: text;
+}
+#name:focus~#label1,
+#name:valid~#label1{
+    top: -35px;
+}
+button{
+    text-align: left;
+}
+p{
+    color: lightgray;
+text-align: left;
+position: relative;
+left: 7%;
+font-size: 18px;
+font-family: sans-serif;
+letter-spacing: 3px;
+}
+
+/* #mainresult{ */
+    /* text-align: center; */
+    /* margin: auto;\ */
+    /* margin-top: 15%; */
+    /* width: 21%; */
+    /* padding:3%; */
+    /* font-size: 30px; */
+    /* color: lightgrey; */
+    /* box-shadow: 7px 7px 5px 0px #212121, */
+    /* -3px -3px 5px 1px #67736a; */
+/* border: none; */
+/* } */
+#back{
+    /* margin-top:30px; */
+    width: 20%;
+    /* text-align: center; */
+    /* position: relative; */
+    /* top: 10%; */
+} 
+
+#mainresult{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+
+
+
+
+@font-face {
+    font-family: Clip;
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+  }
+  
+  body {
+    background-color: #141114;
+    background-color: #34373b;
+
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px),
+      linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23ppx);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+  }
+  
+  .sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent
+    );
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    top: 50%;
+    font-family: "Clip";
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+  }
+
+
+  @media(max-width:700px){
+  .sign{
+    font-size: 35px;
+  }
+}
+
+
+@media(max-width:500px){
+  .sign{
+    font-size: 27px;
+  }
+}
+@media (max-width:380px){
+.sign{
+  font-size: 21px;
+}
+}
+  @keyframes blink {
+    0%,
+    22%,
+    36%,
+    75% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+    28%,
+    33% {
+      color: #ff65bd;
+      text-shadow: none;
+    }
+    82%,
+    97% {
+      color: #ff2483;
+      text-shadow: none;
+    }
+  }
+  
+  .flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+  
+  .fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
+  }
+  
+  @keyframes shine {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+  
+    4% {
+      opacity: 0.9;
+    }
+  
+    6% {
+      opacity: 0.85;
+    }
+  
+    8% {
+      opacity: 0.95;
+    }
+  
+    10% {
+      opacity: 0.9;
+    }
+  
+    11% {
+      opacity: 0.922;
+    }
+  
+    12% {
+      opacity: 0.9;
+    }
+  
+    14% {
+      opacity: 0.95;
+    }
+  
+    16% {
+      opacity: 0.98;
+    }
+  
+    17% {
+      opacity: 0.9;
+    }
+  
+    19% {
+      opacity: 0.93;
+    }
+  
+    20% {
+      opacity: 0.99;
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    26% {
+      opacity: 0.94;
+    }
+  
+    28% {
+      opacity: 0.98;
+    }
+  
+    37% {
+      opacity: 0.93;
+    }
+  
+    38% {
+      opacity: 0.5;
+    }
+  
+    39% {
+      opacity: 0.96;
+    }
+  
+    42% {
+      opacity: 1;
+    }
+  
+    44% {
+      opacity: 0.97;
+    }
+  
+    46% {
+      opacity: 0.94;
+    }
+  
+    56% {
+      opacity: 0.9;
+    }
+  
+    58% {
+      opacity: 0.9;
+    }
+  
+    60% {
+      opacity: 0.99;
+    }
+  
+    68% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.9;
+    }
+  
+    72% {
+      opacity: 0.95;
+    }
+  
+    93% {
+      opacity: 0.93;
+    }
+  
+    95% {
+      opacity: 0.95;
+    }
+  
+    97% {
+      opacity: 0.93;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
